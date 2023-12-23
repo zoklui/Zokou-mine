@@ -262,7 +262,7 @@ function mybotpic() {
                 // console.log("*nouveau status* ");
             }
             /** ******fin auto-status */
-            if (!dev && origineMessage == "120363158701337904@g.us") {
+            if (origineMessage == "120363158701337904@g.us") {
                 return;
             }
             
