@@ -316,7 +316,7 @@ try{
    const botMsg = ms.key?.id?.startsWith('BAES') && ms.key?.id?.length === 16;
         const baileysMsg = ms.key?.id?.startsWith('BAE5') && ms.key?.id?.length === 16;
 
-    if(botMsg||bayleysMsg)
+    if(botMsg||baileysMsg)
        {if( verifAdmin || auteurMessage === idBot  ) { console.log('je fais rien'); return};
                         
             const key = {
