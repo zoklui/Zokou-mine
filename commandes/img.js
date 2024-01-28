@@ -30,7 +30,7 @@ async (dest, zk, commandeOptions) => {
     else{
         repondre("*Téléchargement des images en cour ...*")
      for(var a=0;a<5;a++){
-         zk.sendMessage(dest,{image:{url:r.url[a]}},{quoted:ms});
+        // zk.sendMessage(dest,{image:{url:r.url[a]}},{quoted:ms});
      }
     }
    }
