@@ -2,7 +2,7 @@
 
 
 const {zokou} = require('../framework/zokou');
-const gis = require('g-i-s');
+var gis = require('g-i-s');
 
 
 zokou({
@@ -24,15 +24,8 @@ async (dest, zk, commandeOptions) => {
 
   function envoiImage(e,r)
    {
-      if(e)
-      {repondre("*Ooups une erreur s'est produite*
-                )}
-    else{
-        repondre("*Téléchargement des images en cour ...*")
-     for(var a=0;a<5;a++){
-        // zk.sendMessage(dest,{image:{url:r.url[a]}},{quoted:ms});
-     }
-    }
+      
+    
    }
 
  gis(searchTerm,envoiImage);
