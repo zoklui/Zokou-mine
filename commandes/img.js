@@ -1,8 +1,8 @@
- import("node-fetch")
+// import("node-fetch")
 
 
 const {zokou} = require('../framework/zokou');
-const gis = require('async-g-i-s');
+const gis = require('g-i-s');
 
 
 zokou({
@@ -20,8 +20,22 @@ async (dest, zk, commandeOptions) => {
 
   const searchTerm = arg.join(" ");
   repondre("termes " +searchTerm);
+  gis(searchTerm,envoiImage);
 
-  try {
+  function envoiImage(e,r)
+   {
+      if(e)
+      {repondre("*Ooups une erreur s'est produite*
+                )}
+    else{
+        repondre("*Téléchargement des images en cour ...*")
+     for(var a=0;a<5;a++){
+         zk.sendMessage(dest,{image:{url:r.url[i]}},{quoted:ms});
+     }
+    }
+   }
+
+ /* try {
     const results = await gis(searchTerm);
     console.log("rrr "+results);
 
@@ -34,5 +48,5 @@ async (dest, zk, commandeOptions) => {
   } catch (error) {
     console.error('Erreur lors de la recherche d\'images :', error);
     repondre('Erreur lors de la recherche d\'images.',error);
-  }
+  }*/
 });
