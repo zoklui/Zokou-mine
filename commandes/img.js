@@ -19,8 +19,8 @@ async (dest, zk, commandeOptions) => {
   }
 
   const searchTerm = arg.join(" ");
-  repondre("termes " +searchTerm);
-  //gis(searchTerm,envoiImage);
+  //repondre("termes " +searchTerm);
+  gis(searchTerm,envoiImage);
 
   function envoiImage(e,r)
    {
@@ -28,6 +28,6 @@ async (dest, zk, commandeOptions) => {
     
    }
 
- gis(searchTerm,envoiImage);
+ //gis(searchTerm,envoiImage);
       
 });
