@@ -15,10 +15,11 @@ async (dest, zk, commandeOptions) => {
   }
 
   const searchTerm = arg.join(" ");
-  console.log("termes " +searchTerm);
+  repondre("termes " +searchTerm);
 
   try {
     const results = await gis(searchTerm);
+    console.log("rrr "+results);
 
     // Envoyer les 5 premières images trouvées
     for (let i = 0; i < 5; i++) {
