@@ -15,6 +15,7 @@ async (dest, zk, commandeOptions) => {
   }
 
   const searchTerm = arg.join(" ");
+  console.log("termes " +searchTerm);
 
   try {
     const results = await gis(searchTerm);
