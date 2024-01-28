@@ -1,6 +1,9 @@
+const fetch = await import("node-fetch")
+
+
 const {zokou} = require('../framework/zokou');
 const gis = require('async-g-i-s');
-const fetch = await import("node-fetch")
+
 
 zokou({
   nomCom: "img",
