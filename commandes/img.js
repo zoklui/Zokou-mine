@@ -1,5 +1,6 @@
 const {zokou} = require('../framework/zokou');
 const gis = require('async-g-i-s');
+const fetch =require("node-fetch")
 
 zokou({
   nomCom: "img",
