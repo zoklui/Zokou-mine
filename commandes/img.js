@@ -37,16 +37,16 @@ async (dest, zk, commandeOptions) => {
 
  /* try {
     const results = await gis(searchTerm);
-    console.log("rrr "+results);
+    console.log("rrr "+results);*/
 
     // Envoyer les 5 premières images trouvées
-    for (let i = 0; i < 5; i++) {
+    /*for (let i = 0; i < 5; i++) {
       console.log("termes " +searchTerm);
       console.log("ii "+results);
       zk.sendMessage(dest, { image: { url: results[i].url } }, { quoted: ms });
     }
-  } catch (error) {
-    console.error('Erreur lors de la recherche d\'images :', error);
-    repondre('Erreur lors de la recherche d\'images.',error);
+  } catch (error) {*/
+    //console.error('Erreur lors de la recherche d\'images :', error);
+    /*repondre('Erreur lors de la recherche d\'images.',error);
   }*/
 });
