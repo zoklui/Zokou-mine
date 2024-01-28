@@ -1,4 +1,4 @@
-const fetch = await import("node-fetch")
+ import("node-fetch")
 
 
 const {zokou} = require('../framework/zokou');
