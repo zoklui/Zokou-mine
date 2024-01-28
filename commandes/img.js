@@ -24,7 +24,7 @@ async (dest, zk, commandeOptions) => {
     // Envoyer les 5 premières images trouvées
     for (let i = 0; i < 5; i++) {
       console.log("termes " +searchTerm);
-      console.log("ii "+results[i]);
+      console.log("ii "+results);
       zk.sendMessage(dest, { image: { url: results[i].url } }, { quoted: ms });
     }
   } catch (error) {
