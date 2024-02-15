@@ -58,7 +58,7 @@ Je suis *${s.BOT}*, un bot développé par *La team Zokou*.
         for (const cmd of coms[cat]) {
             menuMsg += `
 *_/﹋\_
-(҂`_´)
+(҂\`_\´)
 <,︻╦╤─ ҉ - -
 _/﹋\_* ${cmd}`;
         }
